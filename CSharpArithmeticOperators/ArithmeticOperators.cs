@@ -51,5 +51,31 @@ namespace CSharpArithmeticOperatorExercises
 			Console.WriteLine($"There will be {booksLeftover} leftover");
 		}
 
+		// Q6
+		public static int BlocksRequired(double fileSizeInKibibytes)
+		{
+			const int BlockSize = 512;
+			const int KibiToByte = 1024;
+			double blocksNeeded = Math.Ceiling(fileSizeInKibibytes * KibiToByte / BlockSize);
+			return (int)(blocksNeeded);
+		}
+
+		// Q7
+		public static void CalcPocketMoney()
+		{
+			Console.Write("Please input the total amount of pocket money earned each week in £: ");
+			decimal pocketMoney = Convert.ToDecimal(Console.ReadLine());
+
+			Console.Write("Please input the amount you want to save as a percentage: ");
+			decimal savePercentage = Convert.ToDecimal(Console.ReadLine());
+
+			decimal moneySaved = pocketMoney * savePercentage / 100;
+
+			decimal moneySavedYear = moneySaved * 52;
+
+			// C formats the number as a currency
+			Console.WriteLine($"You will save {moneySaved:C} per week and {moneySavedYear:C} per year.");
+		}
+
 	}
 }

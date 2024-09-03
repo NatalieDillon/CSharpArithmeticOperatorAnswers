@@ -28,10 +28,15 @@ namespace CSharpArithmeticOperatorExercises
 
 			// Q5
 			ArithmeticOperators.BookAllocator();
+			Console.WriteLine();
 
+			// Q6
+			double fileSize = 19.7;
+			int blocksRequired = ArithmeticOperators.BlocksRequired(fileSize);
+			Console.WriteLine($"{blocksRequired} blocks are needed\n");
 
-
-
+			// Q7
+			ArithmeticOperators.CalcPocketMoney();
 			
 		}
 	}
