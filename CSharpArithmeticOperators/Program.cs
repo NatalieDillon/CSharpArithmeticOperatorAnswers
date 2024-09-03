@@ -14,6 +14,24 @@ namespace CSharpArithmeticOperatorExercises
 			double areaCircle = ArithmeticOperators.CalcCircleArea(1.2);
 			Console.WriteLine($"The area of the circle is {Math.Round(areaCircle,2)}\n");
 
+			// Q3
+			double num1 = -8;
+			double num2 = 4;
+			bool divisible = ArithmeticOperators.IsDivisible(num1, num2);
+			Console.WriteLine($"It is {divisible} that {num1} is divisible by {num2}\n");
+
+			// Q4
+			double sideA = 3;
+			double sideB = 4;
+			double hypotenuse = ArithmeticOperators.Pythagoras(sideA, sideB);
+			Console.WriteLine($"The hypotenuse is {hypotenuse}\n");
+
+			// Q5
+			ArithmeticOperators.BookAllocator();
+
+
+
+
 			
 		}
 	}
